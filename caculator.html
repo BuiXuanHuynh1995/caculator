@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính Casio </title>
+    <link href="caculator.css" rel="stylesheet">
+</head>
+<body>
+<fieldset style="width: 250px">
+    <legend>Casio</legend>
+    <table>
+        <tr>
+            <td>
+                <label for="numBer1">Số thứ nhất</label>
+            </td>
+            <td>
+                <input id="numBer1" type="number">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="numBer2">Số thứ hai</label>
+            </td>
+            <td>
+                <input id="numBer2" type="number">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <td colspan="4">
+                <button style="width: 37px" onclick="cong()">+</button>
+                <button style="width: 37px" onclick="tru()">-</button>
+                <button style="width: 37px" onclick="nhan()">*</button>
+                <button style="width: 37px" onclick="chia()">/</button>
+            </td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="ketQua">Kết quả</label>
+            </td>
+            <td>
+                <input disabled id="ketQua" type="number">
+            </td>
+        </tr>
+    </table>
+</fieldset>
+<br/><br/>
+<fieldset>
+<table>
+    <tr>
+        <td>
+            <input id="input">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <input class="btn" type="button" value="(" onclick="bt(value)">
+            <input class="btn" type="button" value=")" onclick="bt(value)">
+            <input class="btn" type="button" value="%" onclick="bt(value)">
+            <input class="btn" type="button" value="AC" onclick="xoa(value)">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <input class="btn" type="button" value="7" onclick="bt(value)">
+            <input class="btn" type="button" value="8" onclick="bt(value)">
+            <input class="btn" type="button" value="9" onclick="bt(value)">
+            <input class="btn" type="button" value="/" onclick="bt(value)">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <input class="btn" type="button" value="4" onclick="bt(value)">
+            <input class="btn" type="button" value="5" onclick="bt(value)">
+            <input class="btn" type="button" value="6" onclick="bt(value)">
+            <input class="btn" type="button" value="*" onclick="bt(value)">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <input class="btn" type="button" value="3" onclick="bt(value)">
+            <input class="btn" type="button" value="2" onclick="bt(value)">
+            <input class="btn" type="button" value="1" onclick="bt(value)">
+            <input class="btn" type="button" value="-" onclick="bt(value)">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1">
+            <input class="btn" type="button" value="0" onclick="bt(value)">
+            <input class="btn" type="button" value="." onclick="bt(value)">
+            <input class="btn" type="button" value="=" onclick="bang(value)">
+            <input class="btn" type="button" value="+" onclick="bt(value)">
+        </td>
+    </tr>
+    <script src="caculator.js"></script>
+</table>
+</fieldset>
+</body>
+</html>
